@@ -1,0 +1,6 @@
+{
+  "name": "ExactSize",
+  "description": "Compress images and PDFs to exact target file sizes in your browser. Fast, private, and 100% client-side.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

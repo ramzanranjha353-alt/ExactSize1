@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+}
+
+.font-handwriting {
+  font-family: 'Caveat', cursive;
+}
+
+/* Smooth brand gradient utilities */
+.brand-gradient-text {
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 40%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-gradient-bg {
+  background: linear-gradient(135deg, #2563eb 0%, #4f46e5 50%, #7c3aed 100%);
+}
+
+.brand-gradient-hover:hover {
+  background: linear-gradient(135deg, #1d4ed8 0%, #4338ca 50%, #6d28d9 100%);
+}
+
+.brand-border-glow {
+  box-shadow: 0 0 25px -5px rgba(59, 130, 246, 0.15);
+}
+
+.brand-soft-shadow {
+  box-shadow: 0 10px 40px -10px rgba(15, 23, 42, 0.07), 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+}
+
+.brand-card-hover {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.brand-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 35px -10px rgba(37, 99, 235, 0.12), 0 1px 4px 0 rgba(15, 23, 42, 0.05);
+}
+
+/* Respect user's system reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
